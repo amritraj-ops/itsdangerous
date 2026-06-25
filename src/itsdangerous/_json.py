@@ -5,14 +5,11 @@ import typing as t
 
 
 class _CompactJSON:
-    """Wrapper around json module that strips whitespace."""
 
     @staticmethod
     def loads(payload: str | bytes) -> t.Any:
-        return _json.loads(payload)
+        pass
 
     @staticmethod
     def dumps(obj: t.Any, **kwargs: t.Any) -> str:
-        kwargs.setdefault("ensure_ascii", False)
-        kwargs.setdefault("separators", (",", ":"))
-        return _json.dumps(obj, **kwargs)
+        pass
