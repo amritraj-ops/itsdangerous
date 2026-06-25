@@ -36,6 +36,7 @@ class BadTimeSignature(BadSignature):
 
 
 class SignatureExpired(BadTimeSignature):
+    pass
 
 
 class BadHeader(BadSignature):

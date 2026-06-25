@@ -30,6 +30,8 @@ class URLSafeSerializerMixin(Serializer[str]):
 
 
 class URLSafeSerializer(URLSafeSerializerMixin, Serializer[str]):
+    pass
 
 
 class URLSafeTimedSerializer(URLSafeSerializerMixin, TimedSerializer[str]):
+    pass
